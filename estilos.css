@@ -1,0 +1,107 @@
+@font-face {
+  font-family: "PlayfairDisplay";
+  src: url(font/PlayfairDisplay.ttf);
+}
+@font-face {
+  font-family: "Alice-Regular";
+  src: url(font/Alice-Regular.ttf);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: #0741ad;
+  font-family: "Alice-Regular";
+}
+#formulario-contacto {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  width: 450px;
+  padding: 10px 20px;
+  border-radius: 7px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+input {
+  width: 100%;
+  height: 37px;
+  margin-bottom: 30px;
+  padding: 7px;
+  border: 2.8px solid #023580;
+}
+input {
+  border-radius: 50px;
+}
+
+#presiona {
+  padding: 10px 13px;
+  background: white;
+  color: #0741ad;
+  border-radius: 50px;
+  text-decoration: none;
+  width: 150px;
+  text-align: center;
+  cursor: pointer;
+  border: 2.8px solid #023580;
+}
+
+#presiona:hover {
+  background: #b6b8bd;
+  animation: miAnimacion 0.3s alternate;
+  animation-fill-mode: forwards;
+}
+@keyframes miAnimacion {
+  to {
+    transform: scale(0.9);
+  }
+}
+.container__titulo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.consulta {
+  font-size: 25px;
+  color: white;
+  text-align: center;
+
+  font-family: "PlayfairDisplay";
+}
+.sub_titulo {
+  font-size: 25px;
+  color: white;
+  text-align: center;
+}
+.logo img {
+  width: 150px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  animation: inicio 0.3s 6 alternate;
+}
+.olvido {
+  color: white;
+  position: relative;
+  top: -15px;
+}
+@keyframes inicio {
+  to {
+    transform: scale(0.9);
+  }
+}
+@media (min-width: 400px) {
+  .consulta {
+    font-size: 35px;
+  }
+}
